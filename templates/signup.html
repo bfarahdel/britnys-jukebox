@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="background-color: #212121;">
+
+<head>
+    <title>Britny's Jukebox</title>
+    <h1 style="text-align: center;
+    font-size: 48pt;
+    font-family: 'Oleo Script', cursive;
+    color: white;">Britny's Jukebox</h1>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+    @keyframes main-title {
+    0% { color: #fff; }
+    25% { text-shadow: 0 0 10px #f48fb1; }
+    50% { text-shadow: 0 0 15px #ce93d8; }
+    75% { text-shadow: 0 0 20px #ba68c8; }
+    100% { color: #fff; }  
+    }
+    </style>
+</head>
+
+<body>
+    <div class="signup" style="display: flex;
+    justify-content: center;
+    margin-top: 3%;">
+        <form method="POST" action="/signup">
+            <input type="text" , name="username" , placeholder="Username (Must be between 6 and 12 characters)" ,
+                size="50" , style="padding: 15px; border-radius: 15px;">
+            <br>
+            <br>
+            <input type="password" , name="password" , placeholder="Password (Must be between 6 and 12 characters)" ,
+                size="50" , style="padding: 15px; border-radius: 15px;">
+            <br>
+            <br>
+            <input type="submit" , class="signupButton" , value="Sign Up" , style="display: block; 
+            margin-left: auto; 
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 25px;
+            background-color: #212121;
+            border-color: #a5d6a7;
+            color: #a5d6a7;
+            font-weight: 500;
+            font-size: 12pt;
+            font-family: 'Karla', sans-serif;
+            cursor: pointer;">
+        </form>
+    </div>
+    {% with flashMessages = get_flashed_messages() %}
+    {% if flashMessages %}
+    <ul class=flashes style="padding-left: 0px; display: flex;
+    justify-content: center;
+    text-align: center;">
+        {% for flashMessage in flashMessages %}
+        {% if flashMessage == 'Username and password must be between 6 and 12 characters.' %}
+        <li style="list-style-type: none; padding-left: 0px; color: #ef5350; font-size: 16pt;">{{ flashMessage }} </li>
+        {% endif %}
+        {% if flashMessage == 'Username must be between 6 and 12 characters.' %}
+        <li style="list-style-type: none; padding-left: 0px; color: #ef5350; font-size: 16pt;">{{ flashMessage }} </li>
+        {% endif %}
+        {% if flashMessage == 'Password must be between 6 and 12 characters.' %}
+        <li style="list-style-type: none; padding-left: 0px; color: #ef5350; font-size: 16pt;">{{ flashMessage }} </li>
+        {% endif %}
+        {% if flashMessage == 'That username already exists. Please use a different username.' %}
+        <li style="list-style-type: none; padding-left: 0px; color: #ef5350; font-size: 16pt;">{{ flashMessage }} </li>
+        {% endif %}
+        {% if flashMessage == 'Sign up was unsuccessful. Please enter a username and password.' %}
+        <li style="list-style-type: none; padding-left: 0px; color: #ef5350; font-size: 16pt;">{{ flashMessage }} </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+</body>
+
+</html>

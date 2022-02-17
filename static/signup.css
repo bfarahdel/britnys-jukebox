@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
+html {
+    background-color: #212121;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48pt;
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    animation: main-title 5s infinite;
+}
+
+@keyframes main-title {
+    0% { color: #fff; }
+    25% { text-shadow: 0 0 10px #f48fb1; }
+    50% { text-shadow: 0 0 15px #ce93d8; }
+    75% { text-shadow: 0 0 20px #ba68c8; }
+    100% { color: #fff; }
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.signupButton {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 25px;
+    background-color: #212121;
+    border-color: #a5d6a7;
+    color: #a5d6a7;
+    font-weight: 500;
+    font-size: 12pt;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.flashes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

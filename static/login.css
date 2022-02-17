@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+html {
+    background-color: #212121;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48pt;
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    animation: main-title 5s infinite;
+}
+
+@keyframes main-title {
+    0% { color: #fff; }
+    25% { text-shadow: 0 0 10px #f48fb1; }
+    50% { text-shadow: 0 0 15px #ce93d8; }
+    75% { text-shadow: 0 0 20px #ba68c8; }
+    100% { color: #fff; }
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.loginButton {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 25px;
+    background-color: #212121;
+    border-color: #90caf9;
+    color: #90caf9;
+    font-weight: 500;
+    font-size: 12pt;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: horizRul 5s infinite;
+}
+
+@keyframes horizRul {
+    0% { border-color: #fff; }
+    25% { border-color: #f48fb1; }
+    50% { border-color: #ce93d8; }
+    75% { border-color: #ba68c8; }
+    100% { border-color: #fff; }
+}
+
+.signupButton {
+    display: flex;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+    border: none;
+    background-color: #212121;
+    color: #cfd8dc;
+    font-weight: 500;
+    font-size: 12pt;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.flashes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

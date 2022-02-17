@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap');
+
+html {
+    background-color: #212121;
+}
+
+h1 {
+    margin-bottom: 0.5%;
+    margin-top: 0%;
+    text-align: center;
+    font-size: 48pt;
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    animation: main-title 5s infinite;
+}
+
+@keyframes main-title {
+    0% { color: #fff; }
+    25% { text-shadow: 0 0 10px #f48fb1; }
+    50% { text-shadow: 0 0 15px #ce93d8; }
+    75% { text-shadow: 0 0 20px #ba68c8; }
+    100% { color: #fff; }
+}
+
+.messageContainer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20pt;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    font-size: 20pt;
+    font-family: 'Exo 2', sans-serif;
+}
+
+nav ul{height:32px; width:120%;}
+nav ul{overflow:hidden; overflow-y:scroll;}
+
+.artistSearch {
+    display: flex;
+    justify-content: center;
+}
+
+.artistSearchButton {
+    margin-left: 10px; 
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border-color: #81c784; 
+    background-color: #212121;
+    color: #81c784; 
+    font-size: 11pt;
+    font-weight: 500;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.artistSaveButton {
+    display: block; 
+    margin-left: 10px; 
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    border-color: #90caf9;
+    background-color: #212121;
+    color: #90caf9;
+    font-size: 11pt;
+    font-weight: 500;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.artistDeleteButton {
+    border-color: #e57373;
+    background-color: #212121;
+    color: #e57373;
+    font-size: 11pt;
+    font-weight: 500;
+    font-family: 'Karla', sans-serif;
+}
+
+.trackContainer {
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    padding: 5px;
+    min-width: 700px;
+    border: 2.0mm ridge;
+    border-color: #fff;
+    border-radius: 20px;
+    animation: trackContainer 5s infinite;
+}
+
+@keyframes trackContainer {
+    0% { box-shadow: #fff; }
+    0% { border-color: #fff;}
+    25% { box-shadow: 0 0 10px #f48fb1; }
+    25% { border-color: #f48fb1;}
+    50% { box-shadow: 0 0 15px #ce93d8; }
+    50% { border-color: #ce93d8;}
+    75% { box-shadow: 0 0 20px #ba68c8; }
+    75% { border-color: #ba68c8;}
+    100% { box-shadow: #fff; }
+}
+
+
+.trackArtistNameRelated {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: whitesmoke;
+}
+
+.trackArtist {
+    font-weight: bolder;
+    font-size: 32pt;
+    font-family: 'Signika', sans-serif;
+}
+
+.trackName {
+    padding-top: 20px;
+    font-size: 20pt;
+    font-family: 'Oswald', sans-serif;
+}
+
+.trackRelated {
+    padding-top: 50px;
+    font-size: 14pt;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.trackCoverAudioLyrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    display: flex;
+    justify-content: center;
+}
+
+.trackLyrics {
+    display: flex;
+    justify-content: center;
+}
+
+.lyricsURL {
+    color: #bbdefb;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+a:hover {
+    color: #69f0ae;
+}
+
+.flashes {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}

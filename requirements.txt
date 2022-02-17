@@ -1,0 +1,8 @@
+Flask
+python-dotenv
+requests
+testresources
+spotipy
+psycopg2-binary
+Flask-SQLAlchemy==2.1
+flask_login
