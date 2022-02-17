@@ -10,7 +10,7 @@ class randArtist_test(unittest.TestCase):
         self.test_params = [
             {INPUT: ["The Rolling Stones"], EXPECTED_OUTPUT: ["The Rolling Stones"]},
             {INPUT: ["The Beatles"], EXPECTED_OUTPUT: ["The Beatles"]},
-            {INPUT: [], EXPECTED_OUTPUT: ["Adele", "Koethe", "alt-J"]},
+            {INPUT: [], EXPECTED_OUTPUT: ["Daniela Andrade", "Local Natives", "alt-J"]},
         ]
         self.artists = [
             {INPUT: ["The Rolling Stones"], EXPECTED_OUTPUT: ["The Rolling Stones"]},
@@ -29,7 +29,7 @@ class randArtist_test(unittest.TestCase):
     def test_artist_randArtist(self):
         for test in self.artists:
             actualArtists = randArtist(test[INPUT]).pickArtist()
-            randArtists = ["Adele", "Koethe", "alt-J"]
+            randArtists = ["Daniela Andrade", "Local Natives", "alt-J"]
             self.assertNotEqual(actualArtists, randArtists)
 
 
